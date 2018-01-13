@@ -1,0 +1,13 @@
+# fileName  = fg-asym-pi_needles_12180338_stats.txt 
+# userId    = panzer 
+# nodeName  = Georges-MacBook-Pro-2.local 
+# sysName   = Darwin 
+# date      = 20180112 
+# timeStamp = 12180504 
+#
+# command   = file_asym_stats(...) 
+#
+signifDigits	sampleSize	cntHitsPerc	cntProbeLmt	cntProbe_med	cntProbe_mean	cntProbe_sd	cntProbe_min	cntProbe_max	runtime_med	runtime_mean	runtime_sd	runtime_min	runtime_max
+2	10	100.00	1000	60.5	72.7	55.2228817309154	11	157	0.0200000000000102	0.0421999999999912	0.0496494377275975	0.000999999999976353	0.127999999999986
+3	10	90.00	1000	311	436.666666666667	253.75775850208	267	955	0.564000000000021	1.47333333333334	1.60790072765703	0.453000000000031	4.84800000000001
+4	10	10.00	1000	732	732	NA	732	732	4.10600000000005	4.10600000000005	NA	4.10600000000005	4.10600000000005
