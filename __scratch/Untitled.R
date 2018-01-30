@@ -1,0 +1,13 @@
+################ within the temporary library ../_course_lib_R/_course_wrap_xyz_tmp.R
+
+source("../_course_lib_R/_course_wrap_xyz_tmp.R") ; test_of_wild(c(-15.51009, -16.26599, -15.66054)) ; test_of_wild()
+
+out = wrap.DEoptim(popSize=64,  iterLmt=100, OFpar=1) ; summary(out) ;# print(out)
+...
+out = wrap.DEoptim(popSize=64,  iterLmt=200, OFpar=2) ; summary(out) ;# print(out)
+...
+out = wrap.DEoptim(popSize=128, iterLmt=200, OFpar=2) ; summary(out) ;# print(out)
+...
+out = wrap.DEoptim(popSize=128, iterLmt=200, OFpar=3); summary(out) ;# print(out)
+...
+out = wrap.DEoptim(popSize=256, iterLmt=800, OFpar=3) ; summary(out) ;# print(out)

@@ -1,0 +1,35 @@
+% !TEX TS-program = pdflatex
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=1in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+\title{Homework 1}
+\author{Yiqi Tang}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+   
+\vspace*{3ex}
+\noindent
+In HW1, we generated experiments using the DEoptim algorithm. The table below show the results. 
+
+\begin{center}
+\begin{tabular}{ c c c c c c c }
+xAsym=OFpar & seedInit & iterLmt & popSize & isCensored & generations\_min & xBest \\ 
+1 & 7561 & 100 & 64 & FALSE & 13 & -15.815 \\  
+2 & 5069 & 200 & 128 & FALSE & 157 & -15.816 -15.815 \\
+3 & 9571 & 800 & 256 & FALSE & 306 & -15.815 -15.815 -15.661 \\ 
+\end{tabular}
+\end{center}
+	
+\vspace*{3ex}\noindent
+The results of the this experiment shows that as we increase the population size (popSize) as well as the number of results (OFpar) we generate with each run, it takes more iterations to achieve optimization. The smaller the population size, the smaller the number of minimum values we generate, the faster the algorithm converges to a solution. With 1 parameter and a population size of 64, the fastest we achieve optimization is after 13 generations. 
+
+\vspace*{3ex}\noindent
+This is similar to experiments we did to approximate $\pi$ to a certain number of significant digits. All of these methods are stochastic with the goal of finding a global optimum. For the $\pi$ experiments, the more significant digits we require, the more accuracy of the solution, and the longer it takes for the algorithms to achieve optimization. Changing the population size in DEoptim is similar to changing the n in the Buffon's needle experiment, while changing the bounds in DEoptim is the same as changing the number of significant digits required in the $\pi$ experiments. 
+
+\end{document}  
