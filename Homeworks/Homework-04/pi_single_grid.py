@@ -18,7 +18,7 @@ def singleDrop(d, L):
     "dropping a single needle"
     y = np.random.uniform(0, d)
     angle = np.random.uniform(0, math.pi)
-    height = L * math.sin(angle)
+    height = L/2 * math.sin(angle)
     if (y + height) >= d or (y - height) <= 0:
         return True
     return False
